@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/akar-icons-fonts"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=shopping_cart" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Casinhas do Nobel</title>
+</head>
+
+<body>
+    <header class="cabecalho-principal">
+        <div class="marca">
+            <a href="index.html" class="link-home">
+                <img src="img/java.png" alt="Logo java" class="logo">
+            </a>
+            <div class="titulo-principal-box">
+                <h1 class="titulo-principal">CAFÉ COM <br>JAVA, PAI !</h1>
+            </div>
+        </div>
+
+        <div class="busca">
+            <search>
+                <form action="">
+                    <label for="campo-pesquisa" class="sr-only">Pesquisar no site</label>
+                    <div class="pesquisa-box">
+                        <input type="search" name="campo-pesquisa" id="campo-pesquisa" placeholder="PESQUISE AQUI">
+                        <button type="submit" aria-label="Pesquisar" class="btn-pesquisar"><i
+                                class="ai-search"></i></button>
+                    </div>
+                </form>
+            </search>
+        </div>
+
+        <nav class="navegacao">
+            <a href="" class="sobre-nos">Sobre Nós</a>
+            <a href="" class="btn-login">LOGIN</a>
+            <a href="" aria-label="Acessar carrinho">
+                <span class="material-symbols-outlined icon-cart" id="cart">shopping_cart</span>
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="banner-principal">
+            <img src="img/banner.png" alt="Casas de gengibres decoradas para o natal" class="img-banner">
+        </section>
+
+        <section class="produtos-section">
+            <h2 class="titulo-secundario">PRODUTOS</h2>
+
+            <div class="produtos-grid">
+
+                <article class="produto-card">
+                    <figure>
+                        <img src="img/jdbc.png" alt="Curso de jdbc">
+                    </figure>
+                    <h3>CURSO DE JDBC</h3>
+                    <div class="card-compras">
+                        <div class="preco-container">
+                            <span class="preco-atual">R$ 150</span>
+                            <del class="preco-antigo">R$ 200</del>
+                        </div>
+                        <button type="button" class="btn-comprar">COMPRAR</button>
+                    </div>
+                </article>
+
+                <article class="produto-card">
+                    <figure><img src="img/if-else.png" alt="Curso de se-else">
+                    </figure>
+                    <h3>CURSO DE IF ELSE</h3>
+                    <div class="card-compras">
+                        <div class="preco-container">
+                            <span class="preco-atual">R$ 169</span>
+                            <del class="preco-antigo">R$ 2197</del>
+                        </div>
+                        <button type="button" class="btn-comprar">COMPRAR</button>
+                    </div>
+                </article>
+
+                <article class="produto-card">
+                    <figure><img src="img/try-catch.png"
+                            alt="Curso try catch"></figure>
+                    <h3>TRY CATCH FINALLY</h3>
+                    <div class="card-compras">
+                        <div class="preco-container">
+                            <span class="preco-atual">R$ 333</span>
+                            <del class="preco-antigo">R$ 3333</del>
+                        </div>
+                        <button type="button" class="btn-comprar">COMPRAR</button>
+                    </div>
+                </article>
+
+                <article class="produto-card">
+                    <figure><img src="img/debug.png" alt="Curso de debug"></figure>
+                    <h3>CURSO DE DEBUG</h3>
+                    <div class="card-compras">
+                        <div class="preco-container">
+                            <span class="preco-atual">R$ null</span>
+                            <del class="preco-antigo">R$ 404</del>
+                        </div>
+                        <button type="button" class="btn-comprar">COMPRAR</button>
+                    </div>
+                </article>
+
+                <article class="produto-card">
+                    <figure><img src="img/thread.png"
+                            alt="Curso de thread"></figure>
+                    <h3>CURSO DE THREAD</h3>
+                    <div class="card-compras">
+                        <div class="preco-container">
+                            <span class="preco-atual">R$ 119</span>
+                            <del class="preco-antigo">R$ 700</del>
+                        </div>
+                        <button type="button" class="btn-comprar">COMPRAR</button>
+                    </div>
+                </article>
+
+                <article class="produto-card">
+                    <figure><img src="img/pete-repete.png" alt="Curso de loop">
+                    </figure>
+                    <h3 class="titulo-produto">CURSO DE LOOP</h3>
+                    <div class="card-compras">
+                        <div class="preco-container">
+                            <span class="preco-atual">R$ 0</span>
+                            <del class="preco-antigo">R$ 9999</del>
+                        </div>
+                        <button type="button" class="btn-comprar">COMPRAR</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape-principal">
+        <div class="rodape-coluna marca-rodape">
+            <img src="img/java.png" alt="Logo java" class="logo">
+            <p>O curso mais cafezes<br>da internet</p>
+        </div>
+
+        <div class="rodape-coluna links-rodape">
+            <h2>Principal</h2>
+            <nav class="nav-rodape">
+                <a href="#" class="links">Sobre Nós</a>
+                <a href="#" class="links">Home</a>
+            </nav>
+            <div class="redes-sociais">
+                <a href="#" aria-label="Facebook"><img src="img/facebook.png" alt="logo facebook"></a>
+                <a href="#" aria-label="X (Antigo Twitter)"><img src="img/twitter.png"
+                        alt="logo X (antigo twitter)"></a>
+                <a href="#" aria-label="LinkedIn"><img src="img/linkedin.png" alt="logo linkedin"></a>
+                <a href="#" aria-label="Instagram"><img src="img/instagram.png" alt="logo instagram"></a>
+            </div>
+        </div>
+
+        <address class="rodape-coluna contato-rodape">
+            <h2>Contate-nos</h2>
+            <p><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="24" height="24" fill="none"
+                    stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M24 44s14-10.686 14-24A14 14 0 1 0 10 20c0 13.314 14 24 14 24Z" />
+                    <path d="M24 26a6 6 0 1 0 0-12a6 6 0 0 0 0 12Z" />
+                </svg> 356 Minha Casa Campinas - SP</p>
+            <p><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                    <path
+                        d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5l-8-5V6l8 5l8-5v2zm0 10H4V10l8 5l8-5v8z" />
+                </svg> <a href="mailto:casadonobel@nobel.com">java@cursos.java.cafezes.com.cpp</a></p>
+            <p><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path
+                        d="M22 16.92v3a2 2 0 0 1-2.18 2a19.86 19.86 0 0 1-8.63-3.07a19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 2.08 4.18A2 2 0 0 1 4.06 2h3a2 2 0 0 1 2 1.72a12.84 12.84 0 0 0 .7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.22a2 2 0 0 1 2.11-.45a12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                </svg> <a href="tel:+5519988178623">+55 (19) 98817-8623</a></p>
+        </address>
+    </footer>
+</body>
+
+</html>

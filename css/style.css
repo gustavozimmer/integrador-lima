@@ -1,0 +1,389 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "Alexandria";
+    src: url(../fonts/Alexandria-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "NunitoSans";
+    src: url(../fonts/NunitoSans-VariableFont_YTLC\,opsz\,wdth\,wght.ttf);
+}
+
+@font-face {
+    font-family: "Caprasimo";
+    src: url(../fonts/Caprasimo-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Lusitana";
+    src: url(../fonts/Lusitana-Bold.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* background-color: rgba(44, 78, 75, 0.407); */
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cambridge-blue);
+}
+
+:root {
+    --dark-green: #04361d;
+    --cambridge-blue: #76ba9d;
+    --light-blue: #8eddbb;
+    --beige: #f0f2d5;
+    --red: #ef233c;
+    --carmine: #97051d;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* header */
+
+.cabecalho-principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: var(--beige);
+    padding: 0.5rem 4rem;
+}
+
+.marca {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo{
+    width: 3rem;
+}
+
+.titulo-principal-box {
+    padding-left: 2rem;
+}
+
+.titulo-principal {
+    font-size: 1.4rem;
+    font-family: "Alexandria", sans-serif;
+    font-weight: 200;
+}
+
+
+#campo-pesquisa {
+    height: 2.6rem;
+    width: 29.75rem;
+    padding-left: 1.7rem;
+    margin-right: -2rem;
+    font-size: 1rem;
+    font-family: "NunitoSans", sans-serif;
+
+    border: none;
+    border-radius: 10px;
+    background-color: #ABCFC0;
+
+}
+
+#campo-pesquisa:focus {
+    outline: none;
+}
+
+.btn-pesquisar {
+    position: absolute;
+    height: 2.6rem;
+    width: 2.5rem;
+    border: none;
+    background-color: #9EC3B4;
+    border-radius: 0 10px 10px 0;
+    transition: 0.5s;
+}
+
+
+.btn-pesquisar:hover {
+    background-color: #94b6a9;
+    cursor: pointer;
+}
+
+.ai-search {
+    font-size: 1.4rem;
+}
+
+.navegacao{
+    display: flex;
+    gap: 2.5rem;
+    align-items: center;
+}
+
+.sobre-nos {
+    position: relative;
+    padding: 0 0.3rem 0 0.3rem;
+    font-family: "NunitoSans", sans-serif;
+    color: black;
+    text-decoration: none;
+}
+
+.sobre-nos::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 101%;
+    height: 2px;
+    background-color: #000000;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.2s ease-in;
+}
+
+.sobre-nos:hover::after{
+    transform: scaleX(1);
+}
+
+.btn-login{
+    padding: 0.8rem 1rem 0.8rem 1rem;
+    background-color: var(--dark-green);
+    color: #fff;
+    font-family: "Caprasimo", sans-serif;
+    text-decoration: none;   
+    border-radius: 10px;   
+    box-shadow: 0 2px 5px  rgba(0, 0, 0, 0.425);
+}
+
+.btn-login:hover{
+    background-color: #07502a;
+}
+
+.btn-login:active{
+    transform: scale(0.95);
+}
+
+.icon-cart{
+    position: relative;
+    font-size: 2.5rem;
+    color: var(--dark-green);
+}
+
+
+.icon-cart::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 102%;
+    height: 2px;
+    background-color: #000000;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.2s ease-in;
+}
+
+.icon-cart:hover::after{
+    transform: scaleX(1);
+}
+
+.icon-cart:active{
+    transform: scale(0.95);
+}
+
+/* fim header */
+
+/* main */
+
+.banner-principal{
+    width: 100%;
+}
+
+.img-banner{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+.produtos-section {
+    width: 100%;
+    padding: 2rem 5rem;
+}
+
+.titulo-secundario {
+    font-family: "Lusitana";
+    font-size: 3rem;
+    padding-bottom: 3rem;
+    text-align: center;
+    color: white;
+}
+
+
+.produtos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    gap: 3rem 0; 
+}
+
+/* container do card */
+.produto-card {
+    background-color: var(--beige);
+    width: 23rem;
+    height: 27.063rem;
+    padding: 1.5rem 1.5rem;
+    border-radius: 9px;
+    font-family: "NunitoSans";
+    text-align: center;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.250);
+
+}
+
+.produto-card img {
+    width: 19.938rem;
+    height: 15.938rem;
+}
+
+.produto-card h3{
+    padding-top: 1rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.card-compras{
+    padding-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Alexandria", sans-serif;
+    font-weight: 300;
+    color: var(--red);
+}
+
+.preco-atual{
+    font-size: 2rem;
+}
+
+.preco-antigo{
+    font-size: 1.25rem;
+}
+
+.btn-comprar{
+    padding: 1rem;
+    background-color: var(--dark-green);
+    color: #fff;
+    font-family: "Caprasimo", sans-serif;
+    border-radius: 10px;   
+    border: none;
+    box-shadow: 0 2px 5px  rgba(0, 0, 0, 0.425);
+}
+
+.btn-comprar:hover{
+    cursor: pointer;
+    background-color: #07502a;
+}
+
+.btn-comprar:active{
+    transform: scale(0.95);
+}
+
+/* footer */
+
+.rodape-principal{
+    display: flex;
+    align-items: top;
+    justify-content: space-around;
+    margin-top: 4rem;
+    padding: 2rem;
+    background-color: var(--beige);
+    box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.250);
+}
+
+.rodape-coluna{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.marca-rodape{
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.links-rodape{
+    flex-direction: column;
+    text-align: center; 
+}
+
+.nav-rodape{
+    display: flex;
+    flex-direction: column;
+    padding-left: 1.4rem;
+    text-align: left;
+}
+
+.links{
+    display: inline-block;
+    width: max-content;
+    position: relative;
+    text-decoration: none;
+    color: black;
+    padding-bottom: 0.6rem;
+}
+
+.links::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 7px;
+    width: 101%;
+    height: 2px;
+    background-color: #000000;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.2s ease-in;
+}
+
+.links:hover::after{
+    transform: scaleX(1);
+}
+
+.redes-sociais{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.redes-sociais a :hover{
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+.contato-rodape{
+    font-style: normal;
+    justify-content: center;
+}
+
+.contato-rodape a{
+    text-decoration: none;
+    color: black;
+}
+
